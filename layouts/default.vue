@@ -7,22 +7,7 @@
       fixed
       app
     >
-      <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
+      <Menu />
     </v-navigation-drawer>
     <v-app-bar
       :clipped-left="clipped"
@@ -30,19 +15,8 @@
       dense
       elevate-on-scroll
       app
-      src="top-sample.jpeg"
-      shrink-on-scroll
-      height="300"
-      extension-height="48"
     >
-      <template v-slot:img="{ props }">
-        <v-img
-          v-bind="props"
-        ></v-img>
-      </template>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title></v-toolbar-title>
-      <v-spacer />
     </v-app-bar>
     <v-main>
       <v-container>
@@ -59,7 +33,6 @@
 </template>
 
 <script>
-import Logo from "../components/Logo"
 export default {
   name: 'DefaultLayout',
   data () {
@@ -67,16 +40,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
-      items: [
-        {
-          icon: 'mdi-home',
-          title: 'HOME',
-          to: '/'
-        }
-      ],
       miniVariant: false,
-      right: true,
-      rightDrawer: false,
       title: 'タイトル'
     }
   }
