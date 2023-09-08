@@ -1,14 +1,5 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer
-      v-model="drawer"
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      fixed
-      app
-    >
-      <Menu />
-    </v-navigation-drawer>
     <v-app-bar
       :clipped-left="clipped"
       fixed
@@ -27,7 +18,7 @@
       :absolute="!fixed"
       app
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <span>&copy; {{ new Date().getFullYear() }} - Dalahast</span>
     </v-footer>
   </v-app>
 </template>
