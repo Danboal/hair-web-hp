@@ -6,8 +6,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - 美容室のタイトル',
-    title: '美容室のタイトル',
+    titleTemplate: '%s',
+    title: 'dalahast hair salon',
     htmlAttrs: {
       lang: 'jp'
     },
