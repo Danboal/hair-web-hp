@@ -1,35 +1,22 @@
 <template>
   <v-container>
     <v-row>
-      <v-col>
+      <v-col style="height: 100vh;">
         <Logo />
       </v-col>
     </v-row>
-    <v-row>
+    <v-row class="mb-10">
       <v-col>
-        <Instagram />
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col>
-        <GoogleMap />
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col>
-        <Hotpepper />
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col>
-        <Contact />
+        <List />
       </v-col>
     </v-row>
   </v-container>
 </template>
-
 <script>
 export default {
   name: 'IndexPage',
+  mounted() {
+    window.scroll({top: 0, behavior: 'smooth'});
+  }
 }
 </script>
