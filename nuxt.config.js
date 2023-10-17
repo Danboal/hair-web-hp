@@ -14,7 +14,6 @@ export default {
       { name: 'google-site-verification', content: '62kso-9cH8hgqdngIZmCHu6wrul1x4s4rfzePHumZF8' },
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
       { hid: 'description', name: 'description', content: 'Dalahast(ダーラへスト)は、春日、大野城、二日市、太宰府からご利用いただきやすいヘアサロンです。' },
       { hid: 'og:site_name', property: 'og:site_name', content: 'Dalahast hair salon' },
