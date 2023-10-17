@@ -1,29 +1,9 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col style="height: 100vh;">
-        <fade-in-component><Logo /></fade-in-component>
-      </v-col>
-    </v-row>
+    <h1>スタイリスト</h1>
     <v-row class="mb-10">
       <v-col>
         <fade-in-component>
-          <h1>What's Dalahast</h1>
-          <p>Dalahast(ダーラへスト)は、2023年10月6日、下大利駅前にオープンしました。春日、大野城、二日市、太宰府からご利用いただきやすいヘアサロンです。</p>
-          <v-carousel cycle hide-delimiters>
-            <v-carousel-item
-              v-for="(item,i) in shop_photos"
-              :key="i"
-              :src="item"
-            ></v-carousel-item>
-          </v-carousel>
-        </fade-in-component>
-      </v-col>
-    </v-row>
-    <v-row class="mb-10">
-      <v-col>
-        <fade-in-component>
-          <h1>About Owner</h1>
           <v-card
             class="mx-auto"
             max-width="400"
@@ -50,14 +30,39 @@
               この人を指名して予約する
             </v-btn>
             </v-card-actions>
+          </v-card>
+        </fade-in-component>
+      </v-col>
+    </v-row>
+    <v-row class="mb-10">
+      <v-col>
+        <fade-in-component>
+          <v-card
+            class="mx-auto"
+            max-width="400"
+          >
+            <v-img
+              class="white--text align-end"
+              height="400px"
+              src="B184994019.jpg"
+            >
+              <v-card-title style="background-color: #00000054;">トップスタイリスト：福滿 浩一</v-card-title>
+            </v-img>
+
+            <v-card-text class="text--primary">
+              <div>鹿児島からやってきました！</div>
+              <div>慣れない環境ではありますが、美容師としては自信があります！</div>
+              <div>楽しい話などもできればと思います。</div>
+              <div>よろしくお願いいたします！</div>
+            </v-card-text>
             <v-card-actions>
             <v-btn
               outlined tile
-              href="/member"
+              href="https://beauty.hotpepper.jp/CSP/bt/reserve/?storeId=H000665254&stylistId=T000891783"
             >
-              Dalahastのスタイリストをもっと見る
+              この人を指名して予約する
             </v-btn>
-          </v-card-actions>
+            </v-card-actions>
           </v-card>
         </fade-in-component>
       </v-col>
@@ -66,10 +71,9 @@
 </template>
 <script>
 export default {
-  name: 'IndexPage',
   head() {
     return {
-      title: 'Dalahast(ダーラヘスト)',
+      title: 'スタイリスト',
     };
   },
   data(){

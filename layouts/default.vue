@@ -8,7 +8,23 @@
         elevate-on-scroll
         app
       >
+      <v-btn
+        outlined tile
+        href="https://beauty.hotpepper.jp/CSP/bt/reserve/?storeId=H000665254"
+      >
+        <v-icon>mdi-calendar-check</v-icon>
+        ご予約はこちらから
+      </v-btn>
+      <v-spacer></v-spacer>
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       </v-app-bar>
+      <v-navigation-drawer
+        v-model="drawer"
+        temporary
+        fixed
+      >
+        <Menu/>
+      </v-navigation-drawer>
       <v-main>
         <Nuxt />
       </v-main>

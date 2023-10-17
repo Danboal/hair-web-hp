@@ -24,40 +24,33 @@ export default {
   name: 'MenuComponent',
   data () {
     return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
       items: [
         {
           icon: 'mdi-home',
-          title: 'ホーム',
+          title: "What's Dalahast",
           to: '/'
         },
         {
-          icon: 'mdi-home',
-          title: 'カットメニュー',
-          to: '/cut_menu'
+          icon: 'mdi-format-list-text',
+          title: 'Dalahastのこだわり',
+          to: '/about'
         },
         {
-          icon: 'mdi-home',
-          title: 'ご予約',
-          to: '/yoyaku'
+          icon: 'mdi-map',
+          title: 'お店について',
+          to: '/map'
         },
         {
-          icon: 'mdi-home',
+          icon: 'mdi-content-cut',
           title: 'スタイリスト',
           to: '/member'
         },
         {
-          icon: 'mdi-home',
+          icon: 'mdi-face-man-shimmer',
           title: '採用',
           to: '/recruit'
         },
       ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'タイトル'
     }
   }
 }

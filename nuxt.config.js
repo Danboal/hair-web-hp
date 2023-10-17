@@ -6,8 +6,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s | 大野城のヘアサロンなら是非Dalahastへ',
-    title: 'Dalahast hair salon',
+    titleTemplate: '%s | Dalahast hair salon 春日、大野城、二日市、太宰府のヘアサロン',
     htmlAttrs: {
       lang: 'jp'
     },
@@ -17,12 +16,12 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
-      { hid: 'description', name: 'description', content: '大野城のヘアサロンなら是非Dalahastへ' },
+      { hid: 'description', name: 'description', content: 'Dalahast(ダーラへスト)は、春日、大野城、二日市、太宰府からご利用いただきやすいヘアサロンです。' },
       { hid: 'og:site_name', property: 'og:site_name', content: 'Dalahast hair salon' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:url', property: 'og:url', content: 'https://dalahast.web.app' },
       { hid: 'og:title', property: 'og:title', content: 'Dalahast hair salon' },
-      { hid: 'og:description', property: 'og:description', content: '大野城のヘアサロンなら是非Dalahastへ' },
+      { hid: 'og:description', property: 'og:description', content: 'Dalahast(ダーラへスト)は、春日、大野城、二日市、太宰府からご利用いただきやすいヘアサロンです。' },
       { hid: 'og:image', property: 'og:image', content: 'top-icon.JPG' },
       { name: 'twitter:card', content: 'top-icon.JPG' }//　twitterの画像サイズ
     ],
@@ -53,7 +52,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/google-analytics'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -67,6 +67,9 @@ export default {
       lastmod: new Date(),
       changefreq: 'daily'
     }
+  },
+  googleAnalytics: {
+    id: 'UA-XXX-X'
   },
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
