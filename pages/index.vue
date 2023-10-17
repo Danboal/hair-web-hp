@@ -10,6 +10,12 @@
         <fade-in-component>
           <h1>What's Dalahast</h1>
           <p>Dalahast(ダーラへスト)は、2023年10月6日、下大利駅前にオープンしました。春日、大野城、二日市、太宰府からご利用いただきやすいヘアサロンです。</p>
+          <v-btn
+              outlined tile
+              href="/about"
+            >
+              Dalahastをもっと知る
+            </v-btn>
           <v-carousel cycle hide-delimiters>
             <v-carousel-item
               v-for="(item,i) in shop_photos"
@@ -17,6 +23,12 @@
               :src="item"
             ></v-carousel-item>
           </v-carousel>
+          <v-btn
+              outlined tile
+              href="/map"
+            >
+              お店についてもっと知る
+            </v-btn>
         </fade-in-component>
       </v-col>
     </v-row>
@@ -59,6 +71,15 @@
             </v-btn>
           </v-card-actions>
           </v-card>
+        </fade-in-component>
+      </v-col>
+    </v-row>
+    <v-row class="mb-10">
+      <v-col>
+        <fade-in-component>
+          <h1>Instagram</h1>
+          <p>当店のインスタグラムです。お客様のスタイリングの雰囲気を感じていただけますので、是非フォローをお願いします</p>
+          <Instagram/>
         </fade-in-component>
       </v-col>
     </v-row>

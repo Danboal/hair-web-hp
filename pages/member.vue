@@ -67,6 +67,18 @@
         </fade-in-component>
       </v-col>
     </v-row>
+    <v-row>
+      <v-col>
+        <fade-in-component>
+          <v-btn
+              outlined tile block
+              href="/"
+            >
+              Topへ
+            </v-btn>
+        </fade-in-component>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 <script>
