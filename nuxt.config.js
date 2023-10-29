@@ -36,6 +36,10 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    {
+      src: '~/plugins/firebase',
+      mode: 'client'
+    }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -52,7 +56,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-gtag'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -61,6 +65,7 @@ export default {
     baseURL: '/',
   },
   sitemap: {
+    path: '/sitemap.xml',
     hostname: "https://dalahast.web.app",
     defaults: {
       lastmod: new Date(),
@@ -68,7 +73,7 @@ export default {
     }
   },
   googleAnalytics: {
-    id: 'UA-XXX-X'
+    id: 'G-WB7RK6GPJL'
   },
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
